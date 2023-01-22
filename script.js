@@ -45,7 +45,7 @@ const load = (v) => {
 
 
 
-    <a href="${v[index].url}" class="btn btn-primary">Go somewhere</a>
+    <a href="${v[index].url}" class="btn btn-primary">Contest Page</a>
   </div>
 </div>
        `
@@ -80,7 +80,7 @@ e.addEventListener('click', () => {
  
  
  
-     <a href="${data[index].url}" class="btn btn-primary">Go somewhere</a>
+     <a href="${data[index].url}" class="btn btn-primary">Contest Page</a>
    </div>
  </div>
         `
@@ -135,7 +135,7 @@ e.addEventListener('click', () => {
  
  
  
-     <a href="${data[index].url}" class="btn btn-primary">Go somewhere</a>
+     <a href="${data[index].url}" class="btn btn-primary">Contest Page</a>
    </div>
  </div>
         `
@@ -173,7 +173,7 @@ e.addEventListener('click', () => {
  
  
  
-     <a href="${data[index].url}" class="btn btn-primary">Go somewhere</a>
+     <a href="${data[index].url}" class="btn btn-primary">Contest Page</a>
    </div>
  </div>
         `
@@ -220,7 +220,7 @@ e.addEventListener('click', () => {
  
  
  
-     <a href="${data[index].url}" class="btn btn-primary">Go somewhere</a>
+     <a href="${data[index].url}" class="btn btn-primary">Contest Page</a>
    </div>
  </div>
         `
