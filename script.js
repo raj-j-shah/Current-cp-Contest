@@ -67,10 +67,11 @@ e.addEventListener('click', () => {
             uri = imgadd[(data[index].site)]
             ihtml += `
         <div class="card my-2" style="width: 22rem; margin: 0 0.5rem">
-   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;">
+   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: flex;
+   justify-content: center;
+    
+    
+    width: 100%; height:100%">
    <div class="card-body">
      <h5 class="card-title">${data[index].name}</h5>
      <p class="card-text">Status: ${data[index].status}</p>
@@ -122,10 +123,11 @@ e.addEventListener('click', () => {
                 uri = imgadd[(data[index].site)]
                 ihtml += `
         <div class="card my-2" style="width: 22rem; margin: 0 0.5rem">
-   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;">
+   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: flex;
+   justify-content: center;
+    
+    
+    width: 100%; height:100%">
    <div class="card-body">
      <h5 class="card-title">${data[index].name}</h5>
      <p class="card-text">Status: ${data[index].status}</p>
@@ -160,10 +162,11 @@ e.addEventListener('click', () => {
             uri = imgadd[(data[index].site)]
             ihtml += `
         <div class="card my-2" style="width: 22rem; margin: 0 0.5rem">
-   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;">
+   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: flex;
+   justify-content: center;
+    
+    
+    width: 100%; height:100%">
    <div class="card-body">
      <h5 class="card-title">${data[index].name}</h5>
      <p class="card-text">Status: ${data[index].status}</p>
@@ -207,10 +210,11 @@ e.addEventListener('click', () => {
                 uri = imgadd[(data[index].site)]
                 ihtml += `
         <div class="card my-2" style="width: 22rem; margin: 0 0.5rem">
-   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;">
+   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: flex;
+   justify-content: center;
+    
+    
+    width: 100%; height:100%">
    <div class="card-body">
      <h5 class="card-title">${data[index].name}</h5>
      <p class="card-text">Status: ${data[index].status}</p>
