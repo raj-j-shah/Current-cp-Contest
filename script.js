@@ -39,8 +39,8 @@ const load = (v) => {
   <div class="card-body">
     <h5 class="card-title">${v[index].name}</h5>
     <p class="card-text">Status: ${v[index].status}</p>
-    <p>Start Date(y-m-d):      <p>${v[index].start_time} </p></p>
-    <p class="card-text"> End Date(y-m-d): <p>${v[index].end_time}</p> </p>
+    <p>Start Date(y-m-d):      <p>${v[index].start_time.substring(0,10)} </p></p>
+    <p class="card-text"> End Date(y-m-d): <p>${v[index].end_time.substring(0,10)}</p> </p>
     <p class="card-text">Duration: ${Math.round(v[index].duration/3600)} hours</p>
 
 
@@ -74,8 +74,8 @@ e.addEventListener('click', () => {
    <div class="card-body">
      <h5 class="card-title">${data[index].name}</h5>
      <p class="card-text">Status: ${data[index].status}</p>
-     <p>Start Date(y-m-d):      <p>${data[index].start_time} </p>      </p>
-     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time}</p>
+     <p>Start Date(y-m-d):      <p>${data[index].start_time.substring(0,10)} </p>      </p>
+     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time.substring(0,10)}</p>
      <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
  
  
@@ -129,8 +129,8 @@ e.addEventListener('click', () => {
    <div class="card-body">
      <h5 class="card-title">${data[index].name}</h5>
      <p class="card-text">Status: ${data[index].status}</p>
-     <p>Start Date(y-m-d):      <p>${data[index].start_time} </p></p>
-     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time}</p></p>
+     <p>Start Date(y-m-d):      <p>${data[index].start_time.substring(0,10)} </p></p>
+     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time.substring(0,10)}</p></p>
      <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
  
  
@@ -167,8 +167,8 @@ e.addEventListener('click', () => {
    <div class="card-body">
      <h5 class="card-title">${data[index].name}</h5>
      <p class="card-text">Status: ${data[index].status}</p>
-     <p>Start Date(y-m-d):      <p>${data[index].start_time} </p></p>
-     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time}</p></p>
+     <p>Start Date(y-m-d):      <p>${data[index].start_time.substring(0,10)} </p></p>
+     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time.substring(0,10)}</p></p>
      <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
  
  
@@ -214,8 +214,8 @@ e.addEventListener('click', () => {
    <div class="card-body">
      <h5 class="card-title">${data[index].name}</h5>
      <p class="card-text">Status: ${data[index].status}</p>
-     <p>Start Date(y-m-d):      <p>${data[index].start_time} </p></p>
-     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time}</p></p>
+     <p>Start Date(y-m-d):      <p>${data[index].start_time.substring(0,10)} </p></p>
+     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time.substring(0,10)}</p></p>
      <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
  
  
