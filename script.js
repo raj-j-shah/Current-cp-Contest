@@ -41,7 +41,7 @@ const load = (v) => {
     <p class="card-text">Status: ${v[index].status}</p>
     <p>Start Date(y-m-d):      <p>${v[index].start_time} </p></p>
     <p class="card-text"> End Date(y-m-d): <p>${v[index].end_time}</p> </p>
-    <p class="card-text">Duration: ${v[index].duration}</p>
+    <p class="card-text">Duration: ${Math.round(v[index].duration/3600)} hours</p>
 
 
 
@@ -76,7 +76,7 @@ e.addEventListener('click', () => {
      <p class="card-text">Status: ${data[index].status}</p>
      <p>Start Date(y-m-d):      <p>${data[index].start_time} </p>      </p>
      <p class="card-text">End Date(y-m-d): <p>${data[index].end_time}</p>
-     <p class="card-text">Duration: ${data[index].duration}</p>
+     <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
  
  
  
@@ -131,7 +131,7 @@ e.addEventListener('click', () => {
      <p class="card-text">Status: ${data[index].status}</p>
      <p>Start Date(y-m-d):      <p>${data[index].start_time} </p></p>
      <p class="card-text">End Date(y-m-d): <p>${data[index].end_time}</p></p>
-     <p class="card-text">Duration: ${data[index].duration}</p>
+     <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
  
  
  
@@ -169,7 +169,7 @@ e.addEventListener('click', () => {
      <p class="card-text">Status: ${data[index].status}</p>
      <p>Start Date(y-m-d):      <p>${data[index].start_time} </p></p>
      <p class="card-text">End Date(y-m-d): <p>${data[index].end_time}</p></p>
-     <p class="card-text">Duration: ${data[index].duration}</p>
+     <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
  
  
  
@@ -216,7 +216,7 @@ e.addEventListener('click', () => {
      <p class="card-text">Status: ${data[index].status}</p>
      <p>Start Date(y-m-d):      <p>${data[index].start_time} </p></p>
      <p class="card-text">End Date(y-m-d): <p>${data[index].end_time}</p></p>
-     <p class="card-text">Duration: ${data[index].duration}</p>
+     <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
  
  
  
@@ -227,9 +227,11 @@ e.addEventListener('click', () => {
             
         }
     }
+    console.log(new Date(data[1].start_time))
     console.log(count)
     card.innerHTML = ihtml
 
 })
+
 
 
