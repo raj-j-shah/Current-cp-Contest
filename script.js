@@ -236,6 +236,90 @@ e.addEventListener('click', () => {
     card.innerHTML = ihtml
 
 })
+e = document.getElementsByClassName("chef")[0];
+e.addEventListener('click', () => {
+    card.innerHTML = " ";
+    let ihtml = "";
+    let count = 0;
+    for (index in data) {
+        let uri = "";
+
+
+
+        
+            // console.log(data[index].end_time.substring(5, 7))
+            
+            if (data[index].site=="CodeChef") {
+
+                count++;
+                uri = imgadd[(data[index].site)]
+                ihtml += `
+        <div class="card my-2" style="width: 22rem; margin: 0 0.5rem">
+   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: flex;
+   justify-content: center;
+    
+    
+    width: 100%; height:100%">
+   <div class="card-body">
+     <h5 class="card-title">${data[index].name}</h5>
+     <p class="card-text">Status: ${data[index].status}</p>
+     <p>Start Date(y-m-d):      <p>${data[index].start_time.substring(0,10)} </p></p>
+     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time.substring(0,10)}</p></p>
+     <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
+ 
+ 
+ 
+     <a href="${data[index].url}" class="btn btn-primary">Contest Page</a>
+   </div>
+ </div>
+        `
+            
+        }
+    }
+    console.log(new Date(data[1].start_time))
+    console.log(count)
+    card.innerHTML = ihtml
+
+})
+e = document.getElementsByClassName("cforce")[0];
+e.addEventListener('click', () => {
+    card.innerHTML = " ";
+    let ihtml = "";
+    let count = 0;
+    for (index in data) {
+        
+            if (data[index].site=="CodeForces"||data[index].site=="CodeForces::Gym") {
+
+                count++;
+                uri = imgadd[(data[index].site)]
+                ihtml += `
+        <div class="card my-2" style="width: 22rem; margin: 0 0.5rem">
+   <img class="card-img-top" src="${uri}" alt="Card image cap" style="display: flex;
+   justify-content: center;
+    
+    
+    width: 100%; height:100%">
+   <div class="card-body">
+     <h5 class="card-title">${data[index].name}</h5>
+     <p class="card-text">Status: ${data[index].status}</p>
+     <p>Start Date(y-m-d):      <p>${data[index].start_time.substring(0,10)} </p></p>
+     <p class="card-text">End Date(y-m-d): <p>${data[index].end_time.substring(0,10)}</p></p>
+     <p class="card-text">Duration: ${Math.round(data[index].duration/3600)} hours</p>
+ 
+ 
+ 
+     <a href="${data[index].url}" class="btn btn-primary">Contest Page</a>
+   </div>
+ </div>
+        `
+            
+        }
+    }
+    console.log(new Date(data[1].start_time))
+    console.log(count)
+    card.innerHTML = ihtml
+
+})
 
 
 
